@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        background-color: gainsboro;
+      }
+      #loc {
+        height: 500px;
+        width: 800px;
+
+        margin-top: 100px;
+        margin-left: 300px;
+        background-color: white;
+      }
+      h1 {
+        background-color: rgb(12, 228, 12);
+        color: white;
+        padding: 10px;
+      }
+      #form {
+        padding-top: 20px;
+        margin-left: 10px;
+      }
+      input {
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .address {
+        width: 730px;
+      }
+      .name {
+        width: 350px;
+      }
+      #submit {
+        background-color: rgb(8, 245, 8);
+        margin-left: 300px;
+        width: 200px;
+        margin-top: 30px;
+        color: white;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loc">
+      <div id="header">
+        <h1>Location Updates</h1>
+      </div>
+      <div id="form">
+        <form action="">
+          <h4>Name*</h4>
+          <input class="name" type="text" placeholder="firstname" />
+          <input class="name" placeholder="lastname" type="text" /><br />
+          <h4>Address*</h4>
+          <input
+            class="address"
+            type="text"
+            placeholder="Street address"
+          /><br />
+          <input
+            class="address"
+            type="text"
+            placeholder="Address line 2"
+          /><br />
+          <input class="name" type="text" placeholder="city" />
+          <input class="name" type="text" placeholder="State/region" /><br />
+          <input class="name" type="text" placeholder="postal/zip code" />
+          <input class="name" placeholder="-select country-" list="country" />
+          <datalist id="country">
+            <option value="india">india</option>
+            <option value="usa">usa</option>
+            <option value="canada">canada</option>
+          </datalist>
+          <br />
+          <input id="submit" type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

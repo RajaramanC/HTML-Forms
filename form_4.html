@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        padding: 4px;
+      }
+      #form {
+        border: 2px solid black;
+        text-align: center;
+        height: 940px;
+        width: 800px;
+        font-size: 20px;
+        margin: auto;
+        background-color: rgb(59, 26, 134);
+        color: white;
+      }
+      table {
+        text-align: left;
+        padding: 30px;
+        margin: auto;
+      }
+      .in {
+        width: 450px;
+        color: white;
+      }
+      .out {
+        width: 220px;
+        color: white;
+      }
+      #submit {
+        padding: 15px;
+        background-color: white;
+        border-radius: 30px;
+        width: 200px;
+        font-size: 15px;
+      }
+      #header {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <div id="header">
+        <h1>leave application form</h1>
+        <h5>
+          Required or leave if you are going to be out of school using this form
+          to get your request approved
+        </h5>
+      </div>
+      <div id="body">
+        <form action="">
+          <table cellpadding="20px">
+            <tr>
+              <th>Student Name</th>
+              <td>
+                <input class="out" type="text" placeholder="firstname" />
+                <input class="out" type="text" placeholder="lastname" />
+              </td>
+            </tr>
+            <tr>
+              <th>Student ID</th>
+              <td><input type="number" class="in" /></td>
+            </tr>
+            <tr>
+              <th>Student Email id</th>
+              <td><input type="email" class="in" /></td>
+            </tr>
+            <tr>
+              <th>Grade</th>
+              <td>
+                <input class="in" placeholder="-select-" list="blood" />
+                <datalist id="blood">
+                  <option value="A+"></option>
+                  <option value="A"></option>
+                  <option value="B+"></option>
+                  <option value="B"></option>
+                  <option value="C+"></option>
+                  <option value="C"></option>
+                  <option value="o+"></option>
+                  <option value="O"></option>
+                </datalist>
+              </td>
+            </tr>
+
+            <tr>
+              <th>Reason for leave</th>
+              <td><input class="in" type="text" /></td>
+            </tr>
+            <tr>
+              <th>leave stars from</th>
+              <td><input type="date" class="in" /></td>
+            </tr>
+            <tr>
+              <th>leave ends on</th>
+              <td><input type="date" class="in" /></td>
+            </tr>
+            <tr>
+              <th>Duration</th>
+              <td><input type="number" class="in" /></td>
+            </tr>
+            <tr>
+              <th>signature of the parent/guardian</th>
+              <td><textarea cols="60" rows="5"></textarea></td>
+            </tr>
+          </table>
+
+          <input type="submit" value=" submit" id="submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
